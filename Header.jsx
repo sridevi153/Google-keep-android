@@ -24,16 +24,16 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.34,
     shadowRadius: 6.27,
-    elevation: 10,  // For Android
+    elevation: 10, 
     flexDirection: 'row',
-    alignItems: 'center',  // To align items vertically in the center
+    alignItems: 'center',  
   },
   logo: {
-    width: 48, // Assuming the size based on the link provided.
+    width: 48,
     height: 48,
   },
   text: {
-    marginLeft: 10,  // Added some margin for spacing between logo and text
+    marginLeft: 10, 
     fontSize: 20,
     fontWeight: 'bold',
     color:'#fff',

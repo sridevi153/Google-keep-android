@@ -8,23 +8,13 @@ function NoteCard({ note, onDelete, id, onUpdate }) {
   const [newTitle, setNewTitle] = useState(note.title);
   const [newContent, setNewContent] = useState(note.content);
 
-  // const handleUpdate = () => {
-  //   if (newTitle === '' || newContent === '') {
-  //     Alert.alert('Error', 'Empty note cannot be created');
-  //     return;
-  //   }
-  //   else{
-  //       onUpdate(id, newTitle, newContent);
-  //   setIsEditing(false);
-  //   }
-  // };
 
   const handleUpdate = () => {
     if (newTitle === '' || newContent === '') {
         Alert.alert('Error', 'Empty note cannot be updated');
         return;
     }
-    onUpdate(note.id, newTitle, newContent); // Use note.id instead of id
+    onUpdate(note.id, newTitle, newContent); 
     setIsEditing(false);
 };
 
@@ -51,7 +41,7 @@ function NoteCard({ note, onDelete, id, onUpdate }) {
                 style={{ padding: 5 }}
                 name="delete"
                 size={25}
-                onPress={() => onDelete(note.id)} // Use note.id instead of id
+                onPress={() => onDelete(note.id)}
             />
           </View>
       ) : (
@@ -72,7 +62,7 @@ function NoteCard({ note, onDelete, id, onUpdate }) {
                 style={{ padding: 5 }}
                 name="delete"
                 size={25}
-                onPress={() => onDelete(note.id)} // Use note.id instead of id
+                onPress={() => onDelete(note.id)}
             />
       </View>
       </View>

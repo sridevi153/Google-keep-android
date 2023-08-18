@@ -28,24 +28,6 @@ const addNote = async (note) => {
 };
 
 
-  // const deleteNote = async (id) => {
-  //   const newNotes = notes.filter((note, index) => index !== id);
-  //   await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
-  //   setNotes(newNotes);
-  // };
-
-  // const updateNote = async (id, title, content) => {
-  //   const newNotes = notes.map((note, index) => {
-  //     if (index === id) {
-  //       return { ...note, title, content };
-  //     } else {
-  //       return note;
-  //     }
-  //   });
-  //   await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
-  //   setNotes(newNotes);
-  // };
-
 
   const deleteNote = async (noteId) => {
     const newNotes = notes.filter((note) => note.id !== noteId);
